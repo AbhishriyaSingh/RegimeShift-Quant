@@ -208,7 +208,7 @@ For context, both static benchmarks degraded at least as much over the same spli
 - Add more regime features - credit spreads, market breadth, cross-asset correlation - to sharpen the Bull/Bear split beyond the current six features. Not urgent; the existing HMM already shows >90% diagonal persistence, so this isn't fixing something broken.
 - Try 4-5 hidden states instead of 3, see if an in-between "late cycle" state helps around transitions.
 - Compare against risk-parity or Black-Litterman instead of just mean-variance per regime.
-- Test different retrain intervals to see if faster/slower retraining changes how quickly regimes get picked up. 
+- Test different retrain intervals to see if faster/slower retraining changes how quickly regimes get picked up.  
 
 ## Tech Stack
 Python 3.9+ · `hmmlearn` · `cvxpy` · `pandas` / `numpy` · `scikit-learn` (Ledoit-Wolf, StandardScaler) · `matplotlib` / `seaborn` · `yfinance` · `fredapi`
